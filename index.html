@@ -11,8 +11,17 @@
     
     <div class="app-container glass">
         <h1>LinguaLearn AI</h1>
-        <p class="subtitle">Translate, listen, and learn the vocabulary.</p>
+        <p class="subtitle">Translate, listen, and learn vocabulary securely.</p>
         
+        <div class="api-config-box">
+            <input type="password" id="apiKeyInput" placeholder="Enter your Gemini API Key">
+            <div class="api-buttons">
+                <button onclick="saveApiKey()" id="saveKeyBtn">Save Key</button>
+                <button onclick="clearApiKey()" id="clearKeyBtn" class="secondary-btn">Clear</button>
+            </div>
+            <p id="keyStatus" class="status-text"></p>
+        </div>
+
         <div class="input-group">
             <select id="languageSelect">
                 <option value="Japanese">Japanese</option>
