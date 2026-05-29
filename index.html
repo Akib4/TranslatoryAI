@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyglot AI Learner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dynamic-bg"></div>
+    
+    <div class="app-container glass">
+        <h1>LinguaLearn AI</h1>
+        <p class="subtitle">Translate, listen, and learn the vocabulary.</p>
+        
+        <div class="input-group">
+            <select id="languageSelect">
+                <option value="Japanese">Japanese</option>
+                <option value="Chinese">Chinese (Mandarin)</option>
+                <option value="Russian">Russian</option>
+                <option value="Arabic">Arabic</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <textarea id="inputText" placeholder="e.g., I will become the Pirate King!"></textarea>
+        </div>
+
+        <button onclick="translateAndLearn()" id="translateBtn">Translate & Learn</button>
+
+        <div id="result" class="result-container hidden">
+            <div class="translation-header">
+                <h2 id="translatedText">...</h2>
+                <button onclick="playTranslation()" class="audio-btn">🔊 Listen</button>
+            </div>
+            <p id="romanization" class="romanization"></p>
+            
+            <h3>Vocabulary Breakdown</h3>
+            <ul id="dictionaryList" class="dictionary-list"></ul>
+            
+            <h3>Usage Example</h3>
+            <p id="exampleText" class="example-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
