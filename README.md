@@ -1,2 +1,2 @@
-# TranslatoryAI
+# PolyGot
 Language learning app trial
